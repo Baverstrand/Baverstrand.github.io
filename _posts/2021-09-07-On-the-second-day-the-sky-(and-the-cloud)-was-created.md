@@ -3,9 +3,12 @@ title: "På den andra dagen skapades himlen (och molnet)"
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
+  - School
 tags:
   - .NET
   - Molnapplikationer
+  - Molnet
+  - Skolarbete
 ---
 
 Det finns de som tror att himlen skapades på den andra dagen. 
@@ -54,9 +57,12 @@ Det man vinner i frihet förloras i kontroll!
 
 ### Slutsats kring prisjämförelse
 
-När vi började leta priser att jämföra hos de olika molnleverantörerna insåg vi snabbt att man nog behöver vara *mycket* insatt för att överhuvudtaget förstå vad de olika alternativen innebar. Många som tillhandahåller molntjänster är företag som i sin tur levererar tjänster från Azure och AWS, och jag kan tänka mig att man som köpare vill ha hjälp med att specificera sitt eget behov. 
+När vi började leta priser att jämföra hos de olika molnleverantörerna insåg vi snabbt att man nog behöver vara _mycket_ insatt för att överhuvudtaget förstå vad de olika alternativen innebär. Många som tillhandahåller molntjänster är företag som i sin tur levererar tjänster från Azure och AWS, och jag kan tänka mig att man som köpare är beredd att belata någon för att specificera sitt eget behov. När vi klickade runt litegrann blev det väldigt tydligt att det snabbt kan kosta väldigt mycket pengar i onödan om man inte vet exakt vad man behöver och vilja tjänster man har nytta av. 
 
-Vi gjorde en enkel uppställning i Excel för att snabbt få överblick. Även om inte alla alternativ är likvärdiga och att vi kanske gjort lite konstiga val på en del ställen blev det snabbt tydligt att priserna för själva lagringen sjönk drastiskt när man valde att binda upp sig över längre tid. 
+Det blev också tydligt att bra service kostar otroligt mycket pengar. Ett 24/7-avtal kan kosta över 1000 USD/månad bara för en enkel liten server enligt specen i uppgiften. Och då kostar själva molnlagringen kanske 70 USD/månad. 
+
+Vi gjorde en enkel uppställning i Excel för att få en överblick. Även om inte alla alternativ är likvärdiga och att vi kanske gjort lite konstiga val på en del ställen blev det snabbt tydligt att priserna för själva lagringen sjönk drastiskt när man valde att binda upp sig över längre tid. 
 
 ![Klipp från jämförelsen](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/cloudprices.JPG)
 
+Vad som förvånade mig är att det inte var speciellt mycket dyrare att ha molntjänsterna hos en mindre leverantör lokalt än hos någon av "jättarna".
