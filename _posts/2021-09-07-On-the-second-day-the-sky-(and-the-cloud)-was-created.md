@@ -32,14 +32,14 @@ Det finns också flera olika sorters moln beroende på vad man som köpare har f
 
 Med *Offentliga moln* betalar köpare/användare bara för kapaciteten de faktiskt utnyttjar. Ett offentligt moln är enkelt att skala upp både horisontellt (fler enheter används i molnet) och vertikalt (högre beräkningskraft i det antal enheter som redan finns) eftersom den som nyttjar molnet inte behöver gå till affären och köpa en fysisk enhet och installera och konfigurera den. 
 
-En tredje sorts moln är ett *Hybridmoln* där man kan kombinera ett privat moln med ett offentligt. Som exempel kan man lagra känslig data i en databas i ett privat moln företaget själva ägen och administrerar och använda mjukvaran som administrerar datan i ett offentligt moln. 
+En tredje sorts moln är ett *Hybridmoln* där man kan kombinera ett privat moln med ett offentligt. Som exempel kan man lagra känslig data i en databas i ett privat moln företaget själva äger och administrerar och sedan använda mjukvaran som administrerar datan i ett offentligt moln. 
 
 
 ### Vilka fördelar och nackdelar har molnet?
 
 Fördelar:
-- Man behöver inte vara fysiskt kopplat emot hårdvaran utan kan komma åt saker från lite varsomhelst även om man äger sitt eget moln
-- Om man använder IaaS betalar man inte för mer prestanda än man använder
+- Man behöver inte vara fysiskt kopplad emot hårdvaran utan kan komma åt saker från lite varsomhelst även om man äger sitt eget moln
+- Om man använder IaaS står man inte för kostnaden för hårdvara och uppgradering själv
 - Inga uppstartskostnader för inköp av hårdvara eller licenser för t.ex operativsystem eller databaser utan man betalar per tidsenhet man använder tjänsten. 
 - Man behöver som företag inte anställa dyr personal med spetskompetens eller köpa dyra konsulttimmar för underhåll
 - Man kan utöka eller minska kapacitet blixtsnabbt
