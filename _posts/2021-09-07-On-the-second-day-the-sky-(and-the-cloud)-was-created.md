@@ -44,7 +44,6 @@ Fördelar:
 - Man behöver som företag inte anställa dyr personal med spetskompetens eller köpa dyra konsulttimmar för underhåll
 - Man kan utöka eller minska kapacitet blixtsnabbt
 - Data och funktioner kan göras permanent tillgängliga - om det blir strömavbrott i en serverhall någonstans finns det fler platser som tar över helt sömlöst
-- Det är enkelt att distribuera t.ex en programuppdatering till hela organisationen - det görs i molnet och når alla samtidigt
 
 Nackdelar:
 - Det man vinner i frihet förloras i kontroll!
