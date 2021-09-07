@@ -47,7 +47,7 @@ Fördelar:
 - Det är enkelt att distribuera t.ex en programuppdatering till hela organisationen - det görs i molnet och når alla samtidigt
 
 Nackdelar:
-Det man vinner i frihet förloras i kontroll!
+- Det man vinner i frihet förloras i kontroll!
 - Man har begränsad kontroll över vem som egentligen kontrollerar (och vad som händer med) ens egen data
 - Det är inte självklart att man geografiskt kan kontrollera sin data
 - Man blir låst vid tjänsteleverantörens utbud och tvingas anpassa sig till det
