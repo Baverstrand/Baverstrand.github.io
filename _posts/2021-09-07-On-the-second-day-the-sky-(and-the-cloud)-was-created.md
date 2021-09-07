@@ -58,5 +58,5 @@ När vi började leta priser att jämföra hos de olika molnleverantörerna ins�
 
 Vi gjorde en enkel uppställning i Excel för att snabbt få överblick. Även om inte alla alternativ är likvärdiga och att vi kanske gjort lite konstiga val på en del ställen blev det snabbt tydligt att priserna för själva lagringen sjönk drastiskt när man valde att binda upp sig över längre tid. 
 
-![Klipp från jämförelsen](https://github.com/Baverstrand/markdown-here/raw/master/src/common/images/icon48.png "Jämförelse mellan leverantörer")
+![Klipp från jämförelsen](https://github.com/Baverstrand/Baverstrand.github.io/img/cloudprices.JPG)
 
