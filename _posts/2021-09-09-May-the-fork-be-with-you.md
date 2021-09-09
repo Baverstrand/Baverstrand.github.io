@@ -31,7 +31,17 @@ Den högra delen av bilden visar CD-delen av pipelinen. *CD* står för *Continu
 
 ### Hur vi implementerat en CI-pipeline på ett existerande projekt
 Vi valde att implementera pipelinen på vårt första SpacePark-projekt. 
-Det krävdes väldigt lite anpassning för att fungera med automatiseringen - det enda som behövdes var att ta bort appsettings.json från gitignore-filen. 
+Efter att vi forkat projektet krävdes väldigt lite anpassning för att det skulle fungera med automatiseringen. 
+Det enda som behövdes var att ta bort appsettings.json från gitignore-filen. I grupparbetet hade alla varsin lokal kopia eftersom vi hade olika sökvägar till våra databaser, men utan den bygger inte projektet i GitHub.
+
+Vi valde New Workflow i Actions-menyn på SpaceParks GitHubsida. Eftersom vi inte ville att vår pipeline skulle göra något särskilt avancerat valde vi .NET-mallen att modifiera. 
+I uppgiften står det att actions skall triggas vid varje commit, men eftersom det inte är görbart (arbetar man t.ex i VS Code kan man göra flera commits innan man pushar, och det är ingenting GitHub märker) är det en push som är triggern istället. Här fick vi ta bort pull request från mallen och även villkoret main eftersom action skall triggas på push till alla branches. 
+
+Under jobs bytte jag så att den kör på Windows istället för Ubuntu. Jag testade båda, men lät Windows vara kvar. 
+
+På Restore, Build och Test fick vi lägga till sökvägen till SpacePark.sln för att hitta vad som skall byggas och testas. 
+
+Till slut lade jag till en echo-grej bara för att vara rolig. 
 
 ### Beskrivning av min YAML-fil
 
