@@ -55,10 +55,10 @@ We started out with the pipelinefile described in the [Fork Post](https://bavers
 
 ### There are two *tags*, try to explain why
 
-The run number tag is to keep track of the order, it's like an extension of the name. 
+The run number tag is to keep track of the order, it's like an extension of the name to make things clear. 
 I made an experiment and took away the *latest* tag and quickly realized why I need it. 
 
-The first image shows what happened when I took the tag away. The succeeding push was, of course, not tagged with *latest*, and when using the command `docker pull ghcr.io/baverstrand/webapp` it turns out the default tag to look for is *latest*. In this particular case it means I would pull run #37 instead of #38... 
+The first image shows what happened when I took the tag away. The succeeding push was, of course, not tagged with *latest*, and when using the command `docker pull ghcr.io/baverstrand/webapp` it turns out the default tag to look for is *latest* (second image). In this particular case it means I would pull run #37 instead of #38... 
 
 ![Tags](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210914tags.JPG)
 
