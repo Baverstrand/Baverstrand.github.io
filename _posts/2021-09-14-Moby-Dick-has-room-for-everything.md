@@ -64,5 +64,5 @@ The first image shows what happened when I took the tag away. The succeeding pus
 
 ### How did you manage secrets?
 
-When logging in to Github Container Registry I used `{ { github.actor } }` to set the username and `{ { secrets.GITHUB_TOKEN } }` instead of the password. GitHub automatically creates GITHUB_TOKEN for the repository when you enable GitHub Actions. 
+When logging in to Github Container Registry I used `{ { github.actor } }` to set the username and `{ { secrets.GITHUB_TOKEN } }` instead of the password. [GitHub automatically creates GITHUB_TOKEN](https://docs.github.com/en/packages/managing-github-packages-using-github-actions-workflows/publishing-and-installing-a-package-with-github-actions) for the repository when you enable GitHub Actions. 
 In the tags I used `{ { github.actor } }` to avoid showing my username in plain text. 
