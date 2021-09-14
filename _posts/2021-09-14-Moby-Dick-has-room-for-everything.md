@@ -28,6 +28,8 @@ For example, we could skip the step creating a new project since we already clon
 In order to make the Dockerfile build properly, we needed to change SDK version from 2.2 (in the tutorial) too SDK 3.1.
 We also changed the ENTRYPOINT .dll file name to the same as the application. 
 Having this done, we could use the following commands and view the app in the web browser at localhost:80:
-´docker build -t webapp .´
-´run -d -p 8080:80 --name webappup webapp´
+
+`docker build -t webapp .`
+
+`run -d -p 8080:80 --name webappup webapp`
 
