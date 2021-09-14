@@ -7,6 +7,9 @@ categories:
 tags:
   - .NET
   - Docker
+  - YAML
+  - CI/CD
+  - Workflow
   - School Work
 ---
 
