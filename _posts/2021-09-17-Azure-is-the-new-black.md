@@ -17,9 +17,9 @@ tags:
 
 ### What is Serverless and Function As A Service (FaaS)?
 
-Serverless is where the server capacity is in the cloud, where the cloud provider takes care of the hardware stuff. This means you use capacity on demand as a service instead of having to maintain capacity you rarely use (Private clouds) or having to identify the need for and manage scaling yourself as you do with IaaS. This means you only use (and pay for) capacity you actually use. 
+Serverless is where the server capacity is in the cloud, where the cloud provider takes care of the hardware stuff. This means you use capacity on demand as a service instead of having to maintain capacity you rarely use (Private clouds) or having to identify the need for and manage scaling yourself as you do with IaaS. This means you only use (and pay for) capacity when invoked. 
 
-FaaS means you deploy small pieces of code (functions) to the cloud and your cloud provider more or less takes it from there. The function gets triggered from some kind of event (a button gets pressed, a timer or some kind of call for example) and executes its function. Then it goes idle again. This means the function only uses resources (and money) when called upon. Also every event triggers its own instance of the function which means there is no risk of overloading it since several instances of the function can run simultaneously. 
+FaaS means you deploy small pieces of code (functions) to the cloud and your cloud provider more or less takes it from there. The function gets triggered from some kind of event (a button gets pressed, a timer or some kind of call for example) and executes its function. Then it goes idle again. This means the function only uses resources (and money) when called upon. Also every event triggers its own instance of the function which means there is no risk of overloading the function itself since several instances of the function can run simultaneously.However, if the function uses third-party applications, like a database for example, there is still the same risk of overloading that. 
 Not being dependent on a specific place or service can cut the down time to close to zero. 
 
 ### Describe your calculator
