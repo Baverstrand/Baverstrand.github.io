@@ -34,6 +34,8 @@ The calculator is a HTTP-triggered Azure Function of the simplest kind. I instal
 
 To make my function run in Azure I created storage and a Function App from the Azure page with a little help from the steps in the sample script on this [Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/scripts/functions-cli-create-function-app-github-continuous)  page. Then I made a CI/CD pipeline with GitHub Actions with the "Deploy Node.js to Azure Web App" template, modified it to match my code and deployed it from there. Again with a little help from [Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-github-actions?tabs=dotnet). 
 
+![YAML file](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210917yaml.JPG)
+
 When I got green lights from the Actions tab in GitHub I went back to Azure to test my function. 
 From the Dashboard in Azure you can find the Code + Test page. Fill in your parameters and check out the result!
 
