@@ -44,16 +44,9 @@ From the Dashboard in Azure you can find the Code + Test page. Fill in your para
 ### Which are the security issues with your application?
 Vilka säkerhets hot finns där till en applikation om din (beskriv minst en)? Och har du gjort något för att säkra dig emot dissa? (hint: OWASP top 10 - Interpretation for Serverless)
 
+One issue with an application that receives input data is *injection* - an attach through the request data. 
+To avoid this I validate the input; I don't use it as is. If it is anything but numbers my functions returns *BadRequest*.
 
+Another issue might be *exposure of sensitive data*. When setting up the CI/CD workflow file I used secrets and environmental settings and tokens provided by both GitHub and Azure, being careful not to expose any usernames, passwords or other keys. 
 
-## Containers and orchestration
-
-### What did you install locally / GitHub?
-
-In order to have an application running in a Docker container I need:
-
-- [Docker Desktop](https://docs.docker.com/get-docker/)
-- Some kind of CLI, I use Windows PowerShell
-- An application to run :)
-
-For the third task we used the [Build and Push Docker Images](https://github.com/marketplace/actions/build-and-push-docker-images) Action template. 
+![Secrets in YAML](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210917secret.JPG)
