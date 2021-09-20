@@ -19,19 +19,16 @@ Today everything will be about the sky. Or at least the clouds in the sky and wh
 
 The simple way to explain the cloud: Computer power delivered online. 
 
-Beroende lite på vilken molntjänst man har kan molnet leverera allt ifrån hårdvara (till exempel lagring) till en hel tjänst online (till exempel Office 365). Molntjänsterna delas in i tre kategorier;
-Depending on what kind of service you purchase, the cloud can deliver everything from hardware (for example storage) 
+Depending on what kind of service you purchase, the cloud can provide everything from hardware (for example storage) to a complete application (for example Office 365). The cloud can be divided into three categories:
 
+- *IaaS* - Infrastructure as a Service: Servers, storage space and network services
+- *Paas* - Platform as a Service: IaaS + O/S and often database services
+- *SaaS* - Software as a Service: PaaS + software
 
-<---------->
+Example: I have developed an app i need to keep somewhere. I buy *Paas* from Azure to store and run my app from them. Then I sell licenses with log in to my friends so they can use my app online. They buy *SaaS* from me! 
 
+There are also several different kinds of clouds depending on what needs I have as a buyer and what reach I want to have. 
 
-
-- *IaaS* - Infrastructure as a Service: Servrar, lagringsutrymme och nätverksfunktioner
-- *Paas* - Platform as a Service: IaaS + operativsystem och ofta databashantering
-- *SaaS* - Software as a Service: PaaS + mjukvara
-
-Exempel: Jag har utvecklat en app jag behöver ha någonstans. Då köper jag *PaaS* hos Azure för att jag ska få ha min applikation hos dem. Sedan säljer jag licenser med inloggning till mina vänner för att de ska kunna använda min app online. De köper då *SaaS* av mig!
 
 Det finns också flera olika sorters moln beroende på vad man som köpare har för behov och vem man vill nå. 
 *Privata moln* är ofta bara tillgängliga för ägaren av molnet eller för en specifik grupp användare. Man kan antingen äga, husera och administrera molnet själv eller använda sig av IaaS (infrastruktur som tjänst) eller PaaS (plattform som tjänst) för att då istället köpa hela eller delar av hårdvarukapaciteten och mjukvaruhanteringen som en tjänst. Privata moln innebär ofta högre uppstartskostnader och företagen får själva stå för inköp och underhåll av såväl hård- som mjukvara och säkerhet. Även om man köper IaaS eller PaaS kan kostnaderna bli högre i och med att man behöver avgränsa tillgången. 
