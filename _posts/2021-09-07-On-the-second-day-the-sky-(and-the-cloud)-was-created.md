@@ -29,12 +29,11 @@ Example: I have developed an app i need to keep somewhere. I buy *Paas* from Azu
 
 There are also several different kinds of clouds depending on what needs I have as a buyer and what reach I want to have. 
 
+*Private clouds* are usually only made available to the owner of the cloud or for a specific group of users. You can either own, house and support the cloud yourselves or use IaaS (infrastructure as a service) or PaaS (platform as a service) to buy all or parts of the hard- and software capacity as a service. Private clouds often means higher cost to start with since the company needs to finance purchase and service of hard- and software and security. Even if they use IaaS or PaaS the cost might be higher because of the need to limit the access. 
 
-Det finns också flera olika sorters moln beroende på vad man som köpare har för behov och vem man vill nå. 
-*Privata moln* är ofta bara tillgängliga för ägaren av molnet eller för en specifik grupp användare. Man kan antingen äga, husera och administrera molnet själv eller använda sig av IaaS (infrastruktur som tjänst) eller PaaS (plattform som tjänst) för att då istället köpa hela eller delar av hårdvarukapaciteten och mjukvaruhanteringen som en tjänst. Privata moln innebär ofta högre uppstartskostnader och företagen får själva stå för inköp och underhåll av såväl hård- som mjukvara och säkerhet. Även om man köper IaaS eller PaaS kan kostnaderna bli högre i och med att man behöver avgränsa tillgången. 
+With a *Public cloud* the buyer / user only pays for the capacity they actually use. A public cloud easily scales up both horizontally (more units are used in the cloud) and vertically (more computing power in the same amount of units) since the user doesn't actually have to purchase and configure the new hardware. 
 
-Med *Offentliga moln* betalar köpare/användare bara för kapaciteten de faktiskt utnyttjar. Ett offentligt moln är enkelt att skala upp både horisontellt (fler enheter används i molnet) och vertikalt (högre beräkningskraft i det antal enheter som redan finns) eftersom den som nyttjar molnet inte behöver gå till affären och köpa en fysisk enhet och installera och konfigurera den. 
-
+A third kind of cloud is the *Hybrid cloud* where you combine a private and a public cloud. 
 En tredje sorts moln är ett *Hybridmoln* där man kan kombinera ett privat moln med ett offentligt. Som exempel kan man lagra känslig data i en databas i ett privat moln företaget själva äger och administrerar och sedan använda mjukvaran som administrerar datan i ett offentligt moln. 
 
 
