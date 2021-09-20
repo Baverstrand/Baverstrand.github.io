@@ -11,15 +11,21 @@ tags:
   - Skolarbete
 ---
 
-Det finns de som tror att himlen skapades på den andra dagen. 
-Idag är min andra dag på mitt andra år på vägen mot att bli .NET-utvecklare. 
-Den här dagen kommer allt att handla om himlen. Eller iallafall molnen på himlen och vad som finns (och inte finns) i dem. 
+There are people who believe the sky was created on the second day. 
+Today is my second day of my second year on the road becoming a .NET-developer.
+Today everything will be about the sky. Or at least the clouds in the sky and what's in them (and what's not!). 
 
-### Vad är molnet?
+### What is the cloud?
 
-Molnet är, enkelt förklarat, datorkraft som levereras online. 
+The simple way to explain the cloud: Computer power delivered online. 
 
 Beroende lite på vilken molntjänst man har kan molnet leverera allt ifrån hårdvara (till exempel lagring) till en hel tjänst online (till exempel Office 365). Molntjänsterna delas in i tre kategorier;
+Depending on what kind of service you purchase, the cloud can deliver everything from hardware (for example storage) 
+
+
+<---------->
+
+
 
 - *IaaS* - Infrastructure as a Service: Servrar, lagringsutrymme och nätverksfunktioner
 - *Paas* - Platform as a Service: IaaS + operativsystem och ofta databashantering
