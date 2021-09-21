@@ -33,27 +33,27 @@ There are also several different kinds of clouds depending on what needs I have 
 
 With a *Public cloud* the buyer / user only pays for the capacity they actually use. A public cloud easily scales up both horizontally (more units are used in the cloud) and vertically (more computing power in the same amount of units) since the user doesn't actually have to purchase and configure the new hardware. 
 
-A third kind of cloud is the *Hybrid cloud* where you combine a private and a public cloud. 
-En tredje sorts moln är ett *Hybridmoln* där man kan kombinera ett privat moln med ett offentligt. Som exempel kan man lagra känslig data i en databas i ett privat moln företaget själva äger och administrerar och sedan använda mjukvaran som administrerar datan i ett offentligt moln. 
+A third kind of cloud is the *Hybrid cloud* where you combine a private and a public cloud. For example, you can store sensitive data in a databas in a private cloud which your company own and administrate, and use the software which administrates the data from a public cloud. 
 
 
-### Vilka fördelar och nackdelar har molnet?
+### Which are the pros and cons with the cloud?
 
-Fördelar:
-- Man behöver inte vara fysiskt kopplad emot hårdvaran utan kan komma åt saker från lite varsomhelst även om man äger sitt eget moln
-- Om man använder IaaS står man inte för kostnaden för hårdvara och uppgradering själv
-- Inga uppstartskostnader för inköp av hårdvara eller licenser för t.ex operativsystem eller databaser utan man betalar per tidsenhet man använder tjänsten. 
-- Man behöver som företag inte anställa dyr personal med spetskompetens eller köpa dyra konsulttimmar för underhåll
-- Man kan utöka eller minska kapacitet blixtsnabbt
-- Data och funktioner kan göras permanent tillgängliga - om det blir strömavbrott i en serverhall någonstans finns det fler platser som tar över helt sömlöst
+Pros:
+- You don't need to be physically connected to hardware; you can access your data from anywhere even if you use your private cloud.
+- If you use IaaS you don't need to purchase any hardware or upgrades yourself.
+- No startup costs for purchasing hardware or licenses (for example O/S or Db) - you pay per time unit you use the service. 
+- As a company you don't need to hire staff with expert competence or buy expensive consultant hours for maintenance. 
+- Increase or decrease of capacity is fast. 
+- Data and resources can be made permanently available - if the power is out in a server area somewhere there are others in other places to take over seamless. 
 
-Nackdelar:
-- Det man vinner i frihet förloras i kontroll!
-- Man har begränsad kontroll över vem som egentligen kontrollerar (och vad som händer med) ens egen data
-- Det är inte självklart att man geografiskt kan kontrollera sin data
-- Man blir låst vid tjänsteleverantörens utbud och tvingas anpassa sig till det
-- Det kan vara svårt att förutsäga kostnader, om dataanvändningen plötsligt ökar kan prislappen växa fort. Detta kan bero på både ökad trafik till din data eller att något fel i koden plötsligt kräver mycket mer kapacitet
-- Man kan göras beroende av tredjepartslösningar utan att veta om det eller kunna kontrollera detta själv om till exempel tjänsteleverantören i sin tur köper tjänster av någon annan. 
+Cons:
+- What you gain in freedom you will lose in control!
+- Control over who actually have control over (and what happens with) your data is lost. 
+- You cannot be sure to georaphically control your data. 
+- You are locked to your service provider's range of service and you have to adapt to it. 
+- It might be difficult to predict costs. If the use of data suddenly increases your price tag might increase rapidly. This can depend on increased traffic to your data, or maybe an error in your code which creates some undfortunate and costly loop. 
+- Your service provider might in an indirect way make you dependent on third-party solu
+tions without you knowing about it or being able to control it by using other providers themselves. 
 
 
 ### Slutsats kring prisjämförelse
