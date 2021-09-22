@@ -52,11 +52,10 @@ Cons:
 - You cannot be sure to georaphically control your data. 
 - You are locked to your service provider's range of service and you have to adapt to it. 
 - It might be difficult to predict costs. If the use of data suddenly increases your price tag might increase rapidly. This can depend on increased traffic to your data, or maybe an error in your code which creates some undfortunate and costly loop. 
-- Your service provider might in an indirect way make you dependent on third-party solu
-tions without you knowing about it or being able to control it by using other providers themselves. 
+- Your service provider might in an indirect way make you dependent on third-party solutions without you knowing about it or being able to control it by using other providers themselves. 
 
 
-### Slutsats kring prisjämförelse
+### Conclusion comparing prizes
 
 När vi började leta priser att jämföra hos de olika molnleverantörerna insåg vi snabbt att man nog behöver vara _mycket_ insatt för att överhuvudtaget förstå vad de olika alternativen innebär. Många som tillhandahåller molntjänster är företag som i sin tur levererar tjänster från Azure och AWS, och jag kan tänka mig att man som köpare är beredd att belata någon för att specificera sitt eget behov. När vi klickade runt litegrann blev det väldigt tydligt att det snabbt kan kosta väldigt mycket pengar i onödan om man inte vet exakt vad man behöver och vilja tjänster man har nytta av. 
 
