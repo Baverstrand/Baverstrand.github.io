@@ -57,12 +57,12 @@ Cons:
 
 ### Conclusion comparing prizes
 
-När vi började leta priser att jämföra hos de olika molnleverantörerna insåg vi snabbt att man nog behöver vara _mycket_ insatt för att överhuvudtaget förstå vad de olika alternativen innebär. Många som tillhandahåller molntjänster är företag som i sin tur levererar tjänster från Azure och AWS, och jag kan tänka mig att man som köpare är beredd att belata någon för att specificera sitt eget behov. När vi klickade runt litegrann blev det väldigt tydligt att det snabbt kan kosta väldigt mycket pengar i onödan om man inte vet exakt vad man behöver och vilja tjänster man har nytta av. 
+When we started looking for prices to compare from the different cloud providers we quickly realized you need to be _very_ skilled to understand the meaning of the different alternatives. A lot of those who provide cloud services also delivers services from Azure and AWS, and I'm convinced that as a buyer you are willing to pay someone to help specify your needs. Clicking around a bit it became obvious that a lot of money can be spent unnecessarily if you don't know exactly what you are doing. 
 
-Det blev också tydligt att bra service kostar otroligt mycket pengar. Ett 24/7-avtal kan kosta över 1000 USD/månad bara för en enkel liten server enligt specen i uppgiften. Och då kostar själva molnlagringen kanske 70 USD/månad. 
+We also found good service to be incredibly expensive. A 24/7 service contract can cost more than 1000USD per month for a small, simple server like the one in the assignment spec. And in that case, the cloud storage itself only costs 70USD per month. 
 
-Vi gjorde en enkel uppställning i Excel för att få en överblick. Även om inte alla alternativ är likvärdiga och att vi kanske gjort lite konstiga val på en del ställen blev det snabbt tydligt att priserna för själva lagringen sjönk drastiskt när man valde att binda upp sig över längre tid. 
+A simple Excel table made it easy to get an overview. Even if all the alternatives are not exactly the same, and maybe we did some strange choices in some places, it's clear the prices for storage is drastically reduced when signing a deal for a longer time. 
 
-![Klipp från jämförelsen](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/cloudprices.JPG)
+![Snip from comparation](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/cloudprices.JPG)
 
-Vad som förvånade mig är att det inte var speciellt mycket dyrare att ha molntjänsterna hos en mindre leverantör lokalt än hos någon av "jättarna".
+What really surprised me is that keeping your cloud services at a smaller, local provider is not a lot more expensive than at one of the "giants". 
