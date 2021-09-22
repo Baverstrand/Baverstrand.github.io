@@ -15,11 +15,6 @@ tags:
   - School Work
 ---
 
-Vad skulle det kosta att driva detta? Tänk gärna två scenarier: Nästan ingen använadere och jätte jätte mycket användere
-Använd Azure Calculator till att ta fram kostnad
-
-
-
 ## Databases in the cloud
 
 ### My function and how it works 
