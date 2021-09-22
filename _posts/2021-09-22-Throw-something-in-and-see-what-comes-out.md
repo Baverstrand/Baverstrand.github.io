@@ -15,12 +15,6 @@ tags:
   - School Work
 ---
 
-
-Beskriv kort applikationen, vad gör den?
-Beskriv koden
-Beskriv databasen
-Hur har du/ni fått den att köra i Azure functions? Screenshots, scrips, pipelines
-Hur har du tänkt runt uppdatring av databsen ifall scheman ändras? Migrations?
 Vad skulle det kosta att driva detta? Tänk gärna två scenarier: Nästan ingen använadere och jätte jätte mycket användere
 Använd Azure Calculator till att ta fram kostnad
 
@@ -76,20 +70,29 @@ To reach the db from my function and make it easy to work with there were a few 
 
 ### Orchestration
 
+To keep track of the components in this assignment, I put everything in the same (new) Resource group in Azure. 
 
+The function is created the same way as [the calculator I made the other day](https://baverstrand.github.io/blog/school/Azure-is-the-new-black/). New function in Visual Studio -> save in new repo on GitHub. New Function App in Azure -> get the function from GitHub via Deployment Center which created a GitHub Actions file. All I had to do with the action file was to set the dotnet version and remove the .sln file. I ran into some trouble upon building since there was a conflict when I had both a .csproj and a .sln file in the same directory. I spent some time trying to find the right combination of paths, but I gave up and just removed the .sln file. 
 
+As I mentioned earlier I used the Azure Database extension to create the database. The [Build a .NET Core App...](https://docs.microsoft.com/en-us/learn/modules/build-cosmos-db-app-with-vscode/) tutorial was also really helpful. Once it was created I went to the portal, and from the database Settings/Connectionstring/PrimaryConnectionstring I copied the connection string and pasted it into local.settings.json in the "values" section. I did this to be able to do test runs locally instead of making new deploys all the time. 
 
+With the function running locally, I can use [Postman](https://www.postman.com/) for testing. 
 
+To test run the function from Azure I had to add the connection string as an Application Setting in Azure. 
 
+![Connection string](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922connectionstring.jpg)
 
+### Thoughts about changing schemas and new migrations
 
+Since this is a MongoDb database, migrations is not really an issue. That's one of the good things about MongoDb.
+If there are properties in my db which are not in my *Issue* class, I need to ignore those using code. I will need to keep track on what is where in order of my db not to crash!
 
-You need to make your post in the right format, or the function will return Bad Request
+### Cost calculation
 
-To make my function run in Azure I created storage and a Function App from the Azure page with a little help from the steps in the sample script on this [Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/scripts/functions-cli-create-function-app-github-continuous)  page. Then I made a CI/CD pipeline with GitHub Actions with the "Deploy Node.js to Azure Web App" template, modified it to match my code and deployed it from there. Again with a little help from [Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-github-actions?tabs=dotnet). 
+The cost calculation is a bit tricky since I have NO idea of how much is a lot and not, but a fantasy comparation at least shows that the up fron cost is low even if the traffic is high :)
 
-![YAML file](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210917yaml.JPG)
+Low traffic cost
+![Low cost](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922lowcost.jpg)
 
-When I got green lights from the Actions tab in GitHub I went back to Azure to test my function. 
-From the Dashboard in Azure you can find the Code + Test page. Fill in your parameters and check out the result!
-
+Fantasy high cost
+![High cost](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922highcost.jpg)
