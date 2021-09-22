@@ -33,35 +33,35 @@ Använd Azure Calculator till att ta fram kostnad
 I made a Http-triggered function where you can post and see complaints. You can *POST* a new complaint, and you can *GET* all complaints from the database.
 In order to make it easy for myself i used an if-statement to separate *post* and *get*.  
 
-![The if-statement](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922if.jpg)
+![The if-statement](https://raw.githubusercontent.com/baverstrand/Baverstrand.github.io/master/img/210922if.jpg)
 
 #### Post
 
 On *post*, you submit Customer ID, Customer Name and your Problem Description like this and get a message back:
 
-![Post in Postman](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922postresult.jpg)
+![Post in Postman](https://raw.githubusercontent.com/baverstrand/Baverstrand.github.io/master/img/210922postresult.jpg)
 
 If you post invalid data, you will get a Bad Request status and a message about that:
 
-![Post bad in Postman](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922postbadresult.jpg)
+![Post bad in Postman](https://raw.githubusercontent.com/baverstrand/Baverstrand.github.io/master/img/210922postbadresult.jpg)
 
 The code basically consists of a try/catch where the request body gets converted into a json Issue (see picture of Issue class) and stored in the database. If the conversion is unsuccessful the catch returns a Bad Request.
 
-![Post code](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922post.jpg)
+![Post code](https://raw.githubusercontent.com/baverstrand/Baverstrand.github.io/master/img/210922post.jpg)
 
 `public string _id` is set upon writing to database, and as you can see in the database structure picture further down becomes a, for the db, unique id. 
 
-![Issue class](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922issue.jpg)
+![Issue class](https://raw.githubusercontent.com/baverstrand/Baverstrand.github.io/master/img/210922issue.jpg)
 
 #### Get
 
 On *get* a call with an empty filter is made to the db, which returns all posts in it. The issues in the result is converted into anonymous objects in order to remove sensitive identification data. 
 
-![Get code](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922get.jpg)
+![Get code](https://raw.githubusercontent.com/baverstrand/Baverstrand.github.io/master/img/210922get.jpg)
 
 And the return looks like this:
 
-![Get result](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922getresult.jpg)
+![Get result](https://raw.githubusercontent.com/baverstrand/Baverstrand.github.io/master/img/210922getresult.jpg)
 
 ### My database and how it works
 
