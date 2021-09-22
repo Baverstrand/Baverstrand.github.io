@@ -28,9 +28,12 @@ Använd Azure Calculator till att ta fram kostnad
 
 ## Databases in the cloud
 
-### Description of my function and how it works 
+### My function and how it works 
 
-I made a Http-triggered function where you can post and see complaints. You can *POST* a new complaint, and you can *GET* all complaints from the database. 
+I made a Http-triggered function where you can post and see complaints. You can *POST* a new complaint, and you can *GET* all complaints from the database.
+In order to make it easy for myself i used an if-statement to separate *post* and *get*.  
+
+![The if-statement](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922if.JPG)
 
 #### Post
 
@@ -42,14 +45,39 @@ If you post invalid data, you will get a Bad Request status and a message about 
 
 ![Post bad in Postman](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922postbadresult.JPG)
 
-The code basically consists of a try/catch where the request body gets converted into json Issue (see picture of Issue class) and stored in the database.
+The code basically consists of a try/catch where the request body gets converted into a json Issue (see picture of Issue class) and stored in the database. If the conversion is unsuccessful the catch returns a Bad Request.
+
+![Post code](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922post.JPG)
+
 `public string _id` is set upon writing to database, and as you can see in the database structure picture further down becomes a, for the db, unique id. 
 
 ![Issue class](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922issue.JPG)
 
-I made the database with the Azure Database extension for VS Code, and it's structured like this:
+#### Get
+
+On *get* a call with an empty filter is made to the db, which returns all posts in it. The issues in the result is converted into anonymous objects in order to remove sensitive identification data. 
+
+![Get code](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922get.JPG)
+
+And the return looks like this:
+
+![Get result](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922getresult.JPG)
+
+### My database and how it works
+
+I made the database with the Azure Database extension for VS Code.
+This assignment seemed to be a good opportunity to learn a bit about MongoDB since everything is in json format, and with a little help from a friend I got it up and running quite smoothly! I structured it like this, and here you can also see what I mentioned above about the unique id:
 
 ![Db structure](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922db.JPG)
+
+To reach the db from my function and make it easy to work with there were a few steps to be made. First, finding the connection string to be able to make an instance of the database client. Then I also declared the database and everything in it to use later on. 
+
+![Db connection](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922dbconnect.JPG)
+
+### Orchestration
+
+
+
 
 
 
@@ -65,16 +93,3 @@ To make my function run in Azure I created storage and a Function App from the A
 When I got green lights from the Actions tab in GitHub I went back to Azure to test my function. 
 From the Dashboard in Azure you can find the Code + Test page. Fill in your parameters and check out the result!
 
-![Find the test](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210917findtest.JPG)
-
-![Enjoy the output](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210917output.JPG)
-
-### Which are the security issues with your application?
-Vilka säkerhets hot finns där till en applikation om din (beskriv minst en)? Och har du gjort något för att säkra dig emot dissa? (hint: OWASP top 10 - Interpretation for Serverless)
-
-One issue with an application that receives input data is *injection* - an attach through the request data. 
-To avoid this I validate the input; I don't use it as is. If it is anything but numbers my functions returns *BadRequest*.
-
-Another issue might be *exposure of sensitive data*. When setting up the CI/CD workflow file I used secrets and environmental settings and tokens provided by both GitHub and Azure, being careful not to expose any usernames, passwords or other keys. 
-
-![Secrets in YAML](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210917secret.JPG)
