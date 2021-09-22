@@ -13,40 +13,40 @@ tags:
   - Skolarbete
 ---
 
-### Vad är en CI-pipeline?
-För att förklara vad en *CI-pipeline* är behöver man först veta vad *CI* är. 
-*CI* står för *Continuous integration* - direktöversatt kontinuerlig integration och betyder att man kontinuerligt pushar sin kod i mindre portioner in i ett större projekt. 
-För att det ska fungera att flera utvecklare pushar in i samma projekt ställer det krav på att koden är utan konflikter och testbar. 
-Det är här en CI-pipeline kommer in i bilden!
+### What is a CI-pipeline?
 
-![Bild på  en CI/CD-pipeline](https://www.edureka.co/blog/content/ver.1531719070/uploads/2018/07/What-is-Devops-CI-CD-Pipeline-Edureka.png)
-Bild från [DZone](https://dzone.com/articles/learn-how-to-setup-a-cicd-pipeline-from-scratch)
+To explain what a *CI-pipeline* is you need to know what *CI* is. 
+*CI* stands for *Continuous integration* and means you continuously push your code in smaller portions into a bigger project. 
+To make it work with several developers pushing to the same project the code being pushed has to be without conflict and testable. 
+This is where a CI-pipeline comes in the picture!
 
-Den vänstra delen av bilden beskriver en CI-pipeline. Bygg- och testdelen av pipelinen triggas automatiskt när till exempel kod pushas eller en pull-request skapas. Om koden av någon anledning inte bygger eller klarar testet larmar funktionen och man kan snabbt hitta och åtgärda problemet direkt istället för att manuellt testa och försöka hitta vart något gått fel i efterhand. En CI-pipeline påminner mycket om ett [PDCA-hjul](https://en.wikipedia.org/wiki/PDCA) (Plan, Do, Check, Act) som från början kommer från fordonsindustrin där det används som ett verktyg för ständiga förbättringar. 
+![Image of a CI/CD-pipeline](https://www.edureka.co/blog/content/ver.1531719070/uploads/2018/07/What-is-Devops-CI-CD-Pipeline-Edureka.png)
+Picture from [DZone](https://dzone.com/articles/learn-how-to-setup-a-cicd-pipeline-from-scratch)
 
-Ett agilt arbetssätt ställer krav på utvecklarna. Alla i teamet måste commita och pusha ofta, annars blir deras kod snabbt inaktuell och då svår att införliva i branchen man arbetar emot. 
+The left part of the picture describes a CI-pipeline. The build- and test part is triggered when, for example, code is pushed or a pull-request is created. If the code for some reason doesn't build or the tests aren't passed the function tells you and you can quickly find and fix the issue immediately instead of manually testing and trying to find where something went wrong afterwards. A CI-pipeline strongly reminds of a [PDCA-wheel](https://en.wikipedia.org/wiki/PDCA) (Plan, Do, Check, Act) which origins from automotive industry where it's used as a tool for continuous improvements. 
 
-Den högra delen av bilden visar CD-delen av pipelinen. *CD* står för *Continuous Deployment* - kontinuerlig distribution eller *Delivery* - leverans, och handlar om vad som händer med koden efter den är byggd, testad och godkänd. Dessa processer kan också automatiseras och därmed snabbas upp och göras betydligt säkrare än vid manuell hantering. 
- 
+An agile approach places demands on the developers. Everyone in the team has to commit and push often, or else their code will quickly fall behind and become inaccurate. This makes it difficult to merge into the branch you are working against.  
 
-### Hur vi implementerat en CI-pipeline på ett existerande projekt
-Vi valde att implementera pipelinen på vårt första SpacePark-projekt. 
-Efter att vi forkat projektet krävdes väldigt lite anpassning för att det skulle fungera med automatiseringen. 
-Det enda som behövdes var att ta bort appsettings.json från gitignore-filen. I grupparbetet hade alla varsin lokal kopia eftersom vi hade olika sökvägar till våra databaser, men utan den bygger inte projektet i GitHub.
+The right part of the picture describes the CD-part of the pipeline. *CD* stands for *Continuous Deployment* or *Delivery* and is about what happens with the code after passing the CI-part. These processes can also be automated which means the process is both faster and more secure than manual processing. 
 
-Vi valde New Workflow i Actions-menyn på SpaceParks GitHubsida. Eftersom vi inte ville att vår pipeline skulle göra något särskilt avancerat valde vi .NET-mallen att modifiera. 
-I uppgiften står det att actions skall triggas vid varje commit, men eftersom det inte är görbart (arbetar man t.ex i VS Code kan man göra flera commits innan man pushar, och det är ingenting GitHub märker) är det en push som är triggern istället. Här fick vi ta bort pull request från mallen och även villkoret main eftersom action skall triggas på push till alla branches. 
+### How we implemented a CI-pipeline on an existing project
 
-Under jobs bytte jag så att den kör på Windows istället för Ubuntu. Jag testade båda, men lät Windows vara kvar. 
+We chose to implement the pipeline on our first SpacePark-project. 
+Since we forked the project we only needed minor adjustments were needed to make it work with the automation.  We only had to remove appsettings.json from the .gitignore.file. When working in group each person had their own local copy of the appsettings file since we had different paths to our databases, but without it, GitHub won't build the project.  
 
-På Restore, Build och Test fick vi lägga till sökvägen till SpacePark.sln för att hitta vad som skall byggas och testas. 
+In the Actions menu we chose "New Workflow" at the start page for SpacePark in GitHub. Since we didn't want our pipeline to do something really advanced, we chose the .NET template to modify. 
+The assignment says the action should be triggered on every commit, but this is not to be done (if you for example work in VS Code you can make several commits before actually pushing without GitHub knowing about it) a push is the trigger instead. We took away the "pull request" from the trigger list and also "main" from push condition since we wanted to trigger the action on push to *all* branches. 
 
-Till slut lade jag till en echo-grej bara för att vara rolig. 
+On jobs I changed to Windows instead of Ubuntu. I tried out both, but left Windows. 
 
-### Beskrivning av min YAML-fil
+On Restore, Build and Test we had to add the path to SpacePark.sln for the file to find what was to be built and tested. 
 
-Beskrivande text i grönt på bilden
-![Min YAML-fil](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/yamlexplained.JPG)
+At the very end, I added an echo-thing just to be funny
+
+### Description of my YAML-file
+
+Descriptive text (in Swedish) in the picture
+![My YAML-file](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/yamlexplained.JPG)
 
 
 __Källor__
