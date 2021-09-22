@@ -49,7 +49,7 @@ Descriptive text (in Swedish) in the picture
 ![My YAML-file](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/yamlexplained.JPG)
 
 
-__Källor__
+__Resources__
 - [IDG.se](https://cio.idg.se/2.1782/1.730602/ci-cd-standiga-flodet)
 - [Semaphore](https://semaphoreci.com/continuous-integration)
 - [Info World](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html)
