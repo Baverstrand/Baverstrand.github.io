@@ -10,14 +10,10 @@ tags:
   - Razor Pages
   - MongoDb
   - Docker
+  - Visual Studio
+  - Visual Studio Code
   - School Work
 ---
-
-
-Hur har du/ni fått den att köra i Azure App Service? Screenshots, scrips, pipelines
-Vad skulle det kosta att driva detta? Tänk gärna två scenarier: Nästan ingen använadere och jätte jätte mycket användere
-Använd Azure Calculator till att ta fram kostnad
-
 
 ## Web applications in the cloud
 
@@ -49,30 +45,14 @@ The deployments has not been the difficult thing this time, it has clearly been 
 
 ![Environmental](https://raw.githubusercontent.com/baverstrand/Baverstrand.github.io/master/img/210924environmental.jpg)
 
-
-
-
-
-#### Razor pages
-#### MongoDb & Razor pages
-- 
-- 
-
-#### Making https work
-- 
-- 
-
-#### Image to Azure
-[Pushing Docker images to ACR](https://blog.hildenco.com/2020/10/pushing-docker-images-to-azure.html)
-[Deploy image to App Service](https://code.visualstudio.com/docs/containers/app-service)
-
-
 ### Cost calculation
 
-The cost calculation is a bit tricky since I have NO idea of how much is a lot and not, but a fantasy comparation at least shows that the up fron cost is low even if the traffic is high :)
+Just like the other day, I'm in the dark trying to figure out what is a lot and what is not, but here is another try on calculation comparasion!
 
-Low traffic cost
-![Low cost](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922lowcost.jpg)
+Lowest, cheapest alternative on everything
+![Low cost](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/2109224costlow.jpg)
 
-Fantasy high cost
-![High cost](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210922highcost.jpg)
+Premium where available, multiple region, a lot of data and service for dummies
+![High cost](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210924costhigh.jpg)
+
+Upfront cost stays at zero. I might have gone through the roof with the container registry, but still it's obvious that it's not the app service that costs the big $$$
