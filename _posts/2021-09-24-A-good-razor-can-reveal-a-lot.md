@@ -20,7 +20,7 @@ tags:
 ### About the application
 
 The application does exactly the same as the function from [our last assignment](https://baverstrand.github.io/blog/school/Throw-something-in-and-see-what-comes-out/), you can post new and view old complaints, but with a simple frontend. 
-On the start page you can submit a new complaint, and when you go to the history tab you view all previously submitted complaints. 
+On the [start page](https://bigclappdocker.azurewebsites.net) you can submit a new complaint, and when you go to the history tab you view all previously submitted complaints. 
 
 This is the code for submitting a new claim. The `_appsettings.RootUrl` is an Environmental Variable - it differs between running app locally and deployed to the cloud in some way! I've added it as an Application Setting in Azure. 
 
@@ -44,9 +44,9 @@ When I first created the application in Visual Studio I added support for Docker
 ![Dockerfile](https://raw.githubusercontent.com/baverstrand/Baverstrand.github.io/master/img/210924dockerfile.jpg)
 
 After getting the Dockerfile to build properly, I just followed the [Hildenco Software tutorial](https://blog.hildenco.com/2020/10/pushing-docker-images-to-azure.html) almost step by step to push my Dockerfile to Azure Container Registry.
-The [Visual Studio Code](https://code.visualstudio.com/docs/containers/app-service) took me all the way to running my application in App Service via Docker image. 
+The [Visual Studio Code](https://code.visualstudio.com/docs/containers/app-service) took me almost all the way to running my application in App Service via Docker image. Colon is not a valid punctuation mark when deploying via Dockerfile, but someone at [Stackoverflow](https://stackoverflow.com/questions/51480085/configuring-appsettings-with-asp-net-core-on-azure-web-app-for-containers-whith) figured it out!
 
-The deployments has not been the difficult thing this time, it has clearly been "everything else" around it. The MongoDB tutorials for example put their connection string in appsettings which is fine when you run the application locally, but when I pushed to GitHub and Azure I needed to figure out something else. My solution was to make it an Environmental Variable just like I later did with the base URL. I also had to add a few lines in `Program.cs`
+The deployments has not been the difficult thing this time, it has clearly been "everything else" around it. The MongoDB tutorials for example put their connection string in appsettings which is fine when you run the application locally, but when I pushed to GitHub and Azure I needed to figure out something else. My solution was to make it an Environmental Variable just like I later did with the base URL. I also had to add a few lines in `Program.cs`. 
 
 ![Environmental](https://raw.githubusercontent.com/baverstrand/Baverstrand.github.io/master/img/210924environmental.jpg)
 
