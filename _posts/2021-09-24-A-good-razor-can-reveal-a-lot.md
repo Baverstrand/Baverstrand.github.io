@@ -25,12 +25,19 @@ On the [start page](https://bigclappdocker.azurewebsites.net) you can submit a n
 This is the code for submitting a new claim. The `_appsettings.RootUrl` is an Environmental Variable - it differs between running app locally and deployed to the cloud in some way! I've added it as an Application Setting in Azure. 
 
 HTML
+
 ![SubmitHTML](https://raw.githubusercontent.com/baverstrand/Baverstrand.github.io/master/img/210924indexhtml.jpg)
+
 Code
+
 ![SubmitCode](https://raw.githubusercontent.com/baverstrand/Baverstrand.github.io/master/img/210924indexcode.jpg)
+
 Result
+
 ![SubmitPage](https://raw.githubusercontent.com/baverstrand/Baverstrand.github.io/master/img/210924indexpage.jpg)
+
 Application setting
+
 ![ApiSettings](https://raw.githubusercontent.com/baverstrand/Baverstrand.github.io/master/img/210924apisetting.jpg)
 
 I started with the ASP.NET Core Web App template to get the basic file structure. Most of the code structure is the same as in our Ludo 2 project where we also used Razor pages. I started out with getting my MongoDB connected with good help from [Microsoft](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-2.2&tabs=visual-studio) and this tutorial at [DEV](https://dev.to/zoltanhalasz/mongodb-crud-with-asp-net-core-razor-pages-simple-tutorial-gbe). At first I had some certificate issues - my app was built properly but complained about a certificate. Both the error message and [Microsoft](https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?view=aspnetcore-5.0&tabs=visual-studio#trust-the-aspnet-core-https-development-certificate-on-windows-and-macos) said to delete certificates and make a new one and restart VS. That did NOT work. Finally I found a [blogpost](https://itnext.io/installed-asp-net-16702767e7b3) to help me out. 
@@ -55,9 +62,11 @@ The deployments has not been the difficult thing this time, it has clearly been 
 Just like the other day, I'm in the dark trying to figure out what is a lot and what is not, but here is another try on calculation comparasion!
 
 Lowest, cheapest alternative on everything
+
 ![Low cost](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210924costlow.jpg)
 
 Premium where available, multiple region, a lot of data and service for dummies
+
 ![High cost](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210924costhigh.jpg)
 
 Upfront cost stays at zero. I might have gone through the roof with the container registry, but still it's obvious that it's not the app service that costs the big $$$

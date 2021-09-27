@@ -21,6 +21,7 @@ To make it work with several developers pushing to the same project the code bei
 This is where a CI-pipeline comes in the picture!
 
 ![Image of a CI/CD-pipeline](https://www.edureka.co/blog/content/ver.1531719070/uploads/2018/07/What-is-Devops-CI-CD-Pipeline-Edureka.png)
+
 Picture from [DZone](https://dzone.com/articles/learn-how-to-setup-a-cicd-pipeline-from-scratch)
 
 The left part of the picture describes a CI-pipeline. The build- and test part is triggered when, for example, code is pushed or a pull-request is created. If the code for some reason doesn't build or the tests aren't passed the function tells you and you can quickly find and fix the issue immediately instead of manually testing and trying to find where something went wrong afterwards. A CI-pipeline strongly reminds of a [PDCA-wheel](https://en.wikipedia.org/wiki/PDCA) (Plan, Do, Check, Act) which origins from automotive industry where it's used as a tool for continuous improvements. 
@@ -46,6 +47,7 @@ At the very end, I added an echo-thing just to be funny
 ### Description of my YAML-file
 
 Descriptive text (in Swedish) in the picture
+
 ![My YAML-file](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/yamlexplained.JPG)
 
 
