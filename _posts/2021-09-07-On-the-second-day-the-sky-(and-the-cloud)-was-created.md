@@ -1,5 +1,5 @@
 ---
-title: "På den andra dagen skapades himlen (och molnet)"
+title: "On the second day the sky (and the cloud) was created"
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
