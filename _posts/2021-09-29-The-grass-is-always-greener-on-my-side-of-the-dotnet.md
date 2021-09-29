@@ -36,16 +36,17 @@ For now, since our business is not ready to take the big step just yet, I have a
 
 Since I you are one of my most dedicated followers I know you have read [my very first post in this blog](https://baverstrand.github.io/blog/school/On-the-second-day-the-sky-(and-the-cloud)-was-created/#what-is-the-cloud) about the Cloud - what kinds of clouds there are and what services to be found in them. Therefore I'm sure you are familiar with both private clouds and PaaS (which I will mention further on). 
 
-My suggestion is that we, for now, keep both our application and our restricted data as is in our private cloud and use the Service Bus remote. Since the Service Bus handles pretty small amounts of data, and we can choose storage location for it ourselves, the distanse will not be an issue. There are three pillars in this solution: *Private Endpoint* (PE in my drawing), *Private Link* and *Azure Virtual Network*. Let me explain in short:
+My suggestion is that we, for now, keep both our application and our restricted data as is in our private cloud and use the Service Bus remote. Since the Service Bus handles pretty small amounts of data, and we can choose storage location for it ourselves, the distanse will not be an issue. There are three pillars in this solution: *Azure Virtual Network (VNet)*, *Private Link* and *Private Endpoint* (PE in my drawing). Let me explain in short:
 
-- *Private Endpoint* 
-
+- *VNet* is almost the same as our own private network - but online. The  big bonuses with VNet is that it's scalable, has a high availability and is isolated. You can choose who has access to what. VNet also gives us the option to use more of Azure's PaaS services. 
+- *Private Link* is the link that makes it possible to securely access the Service Bus over the private endpoint. Data travels over Microsoft network, and our service will never be available to or visible on public internet. 
+- *Private Endpoint* is the private interface (kind of the door with a big lock on it) to the service using Private Link for access. 
 
 #### Even further into the future
 
-A Virtual Private Cloud (VPC) is a private cloud put into a public cloud, but with limited access. We will maintain the control and management of security, but we will be able to use PaaS and all its benefits both for now and the future. 
+A Virtual Private Cloud (VPC) is a private cloud put into a public cloud, but with limited access. We will maintain the control and management of security, but we will be able to use PaaS and all its benefits. With a VPC we could put both our application and our data in the cloud which would give us a lot less vulnerable application in terms of up-time and redundancy. A solution like this would also significantly lower our hardware costs. 
 
-
+<!-- 
 Ni jobbar i ett företag som har en intern applikation som ni gärna vill modernisera, denna interna applikation använder tillgång till interna server och resurser, och jobbar med klassificerade data som inte får öppet skickas via nätat, och därför är det i följa din CTO inte möjligt att använda en PaaS moln-lösning.
 
 Ett viktigt punkt i modernisering är att implementera en enterprise bus, och ni vill gärna använda er av Azure Service Bus, men tyvär säger eran CTO säger “nej”, på grund av data inte får skickas öppet.
@@ -62,4 +63,4 @@ CosmosDB
 [Azure Private Link availability](https://docs.microsoft.com/en-us/azure/private-link/availability)
 [What is Azure Private Link service?](https://docs.microsoft.com/en-us/azure/private-link/private-link-service-overview)
 [What is Azure Private Endpoint?](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview)
-
+ -->
