@@ -47,3 +47,12 @@ My suggestion is that we, for now, keep both our application and our restricted 
 A Virtual Private Cloud (VPC) is a private cloud put into a public cloud, but with limited access. We will maintain the control and management of security, but we will be able to use PaaS and all its benefits. With a VPC we could put both our application and our data in the cloud which would give us a lot less vulnerable application in terms of up-time and level of redundancy. A solution like this would also significantly lower our hardware costs. 
 
 I hope that I with this small presentation have made you curious enough to consider this alternative!
+
+Further information
+
+- [What is Azure Virtual Network?](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview)
+- [What is Azure Private Link?](https://docs.microsoft.com/en-us/azure/private-link/private-link-overview)
+- [Azure Private Link availability](https://docs.microsoft.com/en-us/azure/private-link/availability)
+- [What is Azure Private Link service?](https://docs.microsoft.com/en-us/azure/private-link/private-link-service-overview)
+- [What is Azure Private Endpoint?](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview)
+- [Azure Service Bus](https://azure.microsoft.com/en-us/services/service-bus/)
