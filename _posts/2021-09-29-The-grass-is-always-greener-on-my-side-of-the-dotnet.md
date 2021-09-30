@@ -7,6 +7,8 @@ categories:
 tags:
   - .NET
   - Azure
+  - Service Bus
+  - VNet
   - PaaS
   - Private cloud
   - Argumentative
