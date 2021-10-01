@@ -39,5 +39,6 @@ I made a cost estimate over 3 months for blob storage. To calculate the amount o
 
 ![Cost calculation](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/211001cost.jpg)
 
-Vad skulle det kosta att driva en applikation som spara och läser filer i Azure? Låt oss säga att man ska bygga en applikation som shutterstock. Vad skulle hända med kostnad över tid om du har 1000 använder som lägger upp 100 MB nya bilder varje dag (med din konsoll app), och alla bilder som finns i din blob laddas ner tre gångar per dag (med ditt web UI).
-Explain with your own words what Microsoft does to secure your blob data (hint)
+#### How secure can I feel using Azure blob storage?
+
+All data saved within Azure is encrypted and accessed only via keys or login. All traffic to or from Azure is sent via https, and therefore encrypted. You can also rotate the keys used for access to further upgrade the security. 
