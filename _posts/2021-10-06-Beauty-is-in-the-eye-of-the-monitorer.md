@@ -13,14 +13,16 @@ tags:
   - School Work
 ---
 ### Monitoring  
-#### The application  
+### The application  
+
 I have, once again, recycled my [complaints app (ClApp)](https://bigclapplogged.azurewebsites.net/). It asks the user to submit a complaint and then redirects the user (if they do it right) to the history page to view all previous complaints. It's a simple app, but it has functions enough to fake some events to log. I pushed it to a workspace in Azure in order to have everything in the same place (app, insights and database).
 
-#### How ClApp interacts with other services  
+### How ClApp interacts with other services  
 
 ![Diagram](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/211006appmap.jpg)
 
-#### ClApp code
+### ClApp code 
+
 I have used [Serilog](https://serilog.net/) and the built in method Stopwatch for my logging. I installed a __bunch__ of NuGet packages.  
 
 ![NuGets](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/211006nugets.jpg)  
@@ -41,33 +43,31 @@ If there is something wrong with the registration of the complaint in the databa
 
 ![Db Warning](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/211006dberror.jpg)  
 
-#### How logging information can prevent safety issues in my application  
+### How logging information can prevent safety issues in my application  
+
 Logging information is essential to keep track of the health of the application. If you have a good idea of what's normal, then you can immediately know when something is not.  
 Also logging is very important regarding security, especially for web applications. 
 If there is a sudden increase of error codes in the 400-series (bad request, file not found, unauthorized request and so on) it might be a sign of an attack. Mostly bad request or unauthorized indicates an injection attack of some kind is going on. 
 If there are a lot of 500-errors (internal server error) something or someone could be trying to take down your application. 
 
-#### My queries  
+### My queries  
+
 - When a new complaint is posted. This was the first one I made, just to warm up  
+
 ![New complaint](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/211006kustocomplaint.jpg)  
+
 - How long the different pages takes to load. If a page takes really long time, maybe there's some mistake in the code!
+
 ![Loading times](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/211006kustoload.jpg)  
+
 - All the warnings and errors. I also made requests to keep warnings and errors apart. Going live it's better to keep them separated since an error is more severe than just a warning and they will probably trigger different actions.   
+
 ![Severity levels](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/211006kustoseverity.jpg)  
 
-
-
-
-
-#### My helpers
+### My helpers  
 
 - [Serilog's GitHub page](https://github.com/serilog/serilog-settings-configuration)
 - [Arve's code cave](https://arvehansen.net/codecave/2020/03/01/appinsights-and-logging-with-serilog/)
-
-
-
-Beskriv kort applikationen, vad gör den?
-Gör en diagram (använn eg draw.io) hur den applikation är förbundet andra tjäster
-Beskriv koden, med fokus på den del som rör din log implementation
-Fundera på och beskriv hur logging av din applikation kan kan avhjälpa säkerhetsproblem i din applikation
-Förklara dina queries; vad gör dom? varför är dissa data som tas fram interesanta?
+- [Samples for Kusto Queries](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/samples?pivots=azuredataexplorer)
+- [Application Insights for ASPNET Core applications](https://docs.microsoft.com/en-us/azure/azure-monitor/app/asp-net-core)
+- [Stackoverflow](https://stackoverflow.com/questions/11459060/razor-void-function)
