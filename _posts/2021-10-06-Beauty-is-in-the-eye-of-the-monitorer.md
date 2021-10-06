@@ -15,7 +15,7 @@ tags:
 ### Monitoring  
 ### The application  
 
-I have, once again, recycled my [complaints app (ClApp)](https://bigclapplogged.azurewebsites.net/). It asks the user to submit a complaint and then redirects the user (if they do it right) to the history page to view all previous complaints. It's a simple app, but it has functions enough to fake some events to log. I pushed it to a workspace in Azure in order to have everything in the same place (app, insights and database).
+I have, once again, recycled my [complaints app (ClApp)](https://bigclapplogged.azurewebsites.net/). It asks the user to submit a complaint and then redirects the user (if they do it right) to the history page to view all previous complaints. It's a simple app, but it has functions enough to fake some events to log. I deployed it to a workspace in Azure in order to have everything in the same place (app, insights and database).
 
 ### How ClApp interacts with other services  
 
