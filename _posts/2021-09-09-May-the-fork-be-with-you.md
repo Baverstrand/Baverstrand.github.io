@@ -12,7 +12,6 @@ tags:
   - YAML
   - Skolarbete
 ---
-
 ### What is a CI-pipeline?
 
 To explain what a *CI-pipeline* is you need to know what *CI* is. 

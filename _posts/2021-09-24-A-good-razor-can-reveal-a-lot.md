@@ -14,7 +14,6 @@ tags:
   - Visual Studio Code
   - School Work
 ---
-
 ## Web applications in the cloud
 
 ### About the application

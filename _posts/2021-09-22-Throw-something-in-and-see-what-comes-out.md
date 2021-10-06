@@ -14,7 +14,6 @@ tags:
   - GitHub Actions
   - School Work
 ---
-
 ## Databases in the cloud
 
 ### My function and how it works 

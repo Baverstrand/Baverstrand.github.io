@@ -43,7 +43,8 @@ From the Dashboard in Azure you can find the Code + Test page. Fill in your para
 
 ![Enjoy the output](https://raw.githubusercontent.com/Baverstrand/Baverstrand.github.io/master/img/210917output.JPG)
 
-### Which are the security issues with your application?
+### Which are the security issues with your application?  
+
 One issue with an application that receives input data is *injection* - an attach through the request data. 
 To avoid this I validate the input; I don't use it as is. If it is anything but numbers my functions returns *BadRequest*.
 

@@ -10,7 +10,6 @@ tags:
   - Molnet
   - Skolarbete
 ---
-
 There are people who believe the sky was created on the second day. 
 Today is my second day of my second year on the road becoming a .NET-developer.
 Today everything will be about the sky. Or at least the clouds in the sky and what's in them (and what's not!). 
