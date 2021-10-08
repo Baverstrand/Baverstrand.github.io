@@ -9,7 +9,7 @@ tags:
   - Azure
   - Blob
   - Razor Pages
-  - School Work
+  - SchoolWork
 ---
 ## Files and files
 

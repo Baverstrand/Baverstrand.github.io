@@ -10,7 +10,7 @@ tags:
   - Serilog
   - Logging
   - Razor Pages
-  - School Work
+  - SchoolWork
 ---
 ### Monitoring  
 ### The application  

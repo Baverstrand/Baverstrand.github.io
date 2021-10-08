@@ -10,7 +10,7 @@ tags:
   - GitHubAction
   - CI pipeline
   - YAML
-  - Skolarbete
+  - SchoolWork
 ---
 ### What is a CI-pipeline?
 

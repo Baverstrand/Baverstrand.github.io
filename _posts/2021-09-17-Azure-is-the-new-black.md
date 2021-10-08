@@ -11,7 +11,7 @@ tags:
   - YAML
   - CI/CD
   - GitHub
-  - School Work
+  - SchoolWork
 ---
 ## Serverless applications
 

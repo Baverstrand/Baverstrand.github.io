@@ -12,7 +12,7 @@ tags:
   - PaaS
   - Private cloud
   - Argumentative
-  - School Work
+  - SchoolWork
 ---
 ## Why Azure is the best thing since sliced bread
 

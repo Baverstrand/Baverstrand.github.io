@@ -12,7 +12,7 @@ tags:
   - CI/CD
   - GitHub
   - GitHub Actions
-  - School Work
+  - SchoolWork
 ---
 ## Databases in the cloud
 

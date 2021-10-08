@@ -10,7 +10,7 @@ tags:
   - YAML
   - CI/CD
   - Workflow
-  - School Work
+  - SchoolWork
 ---
 ## Containers and orchestration
 

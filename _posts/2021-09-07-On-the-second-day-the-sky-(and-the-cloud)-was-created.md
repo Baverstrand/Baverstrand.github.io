@@ -6,9 +6,9 @@ categories:
   - School
 tags:
   - .NET
-  - Molnapplikationer
-  - Molnet
-  - Skolarbete
+  - Cloud applications
+  - The cloud
+  - SchoolWork
 ---
 There are people who believe the sky was created on the second day. 
 Today is my second day of my second year on the road becoming a .NET-developer.

@@ -12,7 +12,7 @@ tags:
   - Docker
   - Visual Studio
   - Visual Studio Code
-  - School Work
+  - SchoolWork
 ---
 ## Web applications in the cloud
 
