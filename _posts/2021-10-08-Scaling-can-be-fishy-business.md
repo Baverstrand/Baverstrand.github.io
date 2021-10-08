@@ -27,7 +27,7 @@ Comparing cost when scaling up vs out is a bit difficult since scaling up is not
 
 Keeping within the same tier you basically have a linear cost increase and pay per core and RAM. 25 instances of 4 cores cost just as much as 100 instances of 1 core, and 250 instances will cost 10 times as much as 25.
 
-#### For a virtual machines
+#### For virtual machines
 
 Comparing VMs shows just about the same. I am not familiar with the different options, but I have tried to find comparable ones. 
 
